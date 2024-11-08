@@ -131,7 +131,7 @@ public class Alerts_Frames
 		
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("js-cc-number")));
 		driver.findElement(By.id("js-cc-number")).sendKeys("4242424242424242");
-		driver.findElement(By.id("js-cc-exp-date")).sendKeys("12/22");
+		driver.findElement(By.id("js-cc-exp-date")).sendKeys("12/28");
 		driver.findElement(By.id("js-cc-cvc")).sendKeys("123");
 		driver.findElement(By.id("js-cc-name")).sendKeys("Tester one");
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("div[class='ms-radio-circle flex']")));
