@@ -63,9 +63,8 @@ public class Alerts_Frames
 		driver.findElement(By.xpath("//input[@class='makespace-ui-library-1eda6fg css-nj7v3y2' and @name='side-table']")).sendKeys("1");
 
 		jse.executeScript("window.scrollBy(0,-250)", "");
-		//Thread.sleep(3000);
 		jse.executeScript("window.scrollBy(0,-250)", "");
-		//Thread.sleep(3000);
+
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(.//*[@class='makespace-ui-library-1nz3emm css-5gitwz4'])[2]")));
 		WebElement livingRoom = driver.findElement(By.xpath("(.//*[@class='makespace-ui-library-1nz3emm css-5gitwz4'])[2]"));
 		if (livingRoom.isDisplayed())
@@ -79,35 +78,35 @@ public class Alerts_Frames
 		}
 		
 		jse.executeScript("window.scrollBy(0,-1000)", "");
-		//Thread.sleep(3000);
+		
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//p[contains(text(),'Miscellaneous')]")));
 		driver.findElement(By.xpath("//p[contains(text(),'Miscellaneous')]")).click();
-		//Thread.sleep(3000);
+		
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("input[name='bins']")));
 		driver.findElement(By.cssSelector("input[name='bins']")).sendKeys("4");
 		Thread.sleep(2000);
 		jse.executeScript("window.scrollBy(0,500)", "");
-		//Thread.sleep(3000);
+		
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(.//*[@class='makespace-ui-library-1yp6ee3 css-1bp8ty01'])[1]")));
 		driver.findElement(By.xpath("(.//*[@class='makespace-ui-library-1yp6ee3 css-1bp8ty01'])[1]")).click();
-		//Thread.sleep(3000);
+		
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("input[class='dropoff-supply-input']")));
 		driver.findElement(By.cssSelector("input[class='dropoff-supply-input']")).sendKeys(Keys.DELETE);
 		driver.findElement(By.cssSelector("input[class='dropoff-supply-input']")).sendKeys("4");
 		driver.findElement(By.cssSelector("input[class='dropoff-supply-input']")).sendKeys(Keys.RETURN);
-		//Thread.sleep(3000);
+		
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("button[class='makespace-ui-library-1akkiyt css-1bp8ty00']")));
 		driver.findElement(By.cssSelector("button[class='makespace-ui-library-1akkiyt css-1bp8ty00']")).click();
-		//Thread.sleep(3000);
+		
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(.//*[@data-service='bulky-items'])[3]")));
 		driver.findElement(By.xpath("(.//*[@data-service='bulky-items'])[3]")).click();
 		driver.findElement(By.xpath("(.//*[@data-service='fragile-items'])[3]")).click();
 		driver.findElement(By.xpath("(.//*[@data-service='walk-up'])[3]")).click();
 		driver.findElement(By.xpath("(.//*[@data-service='disassembly'])[3]")).click();
-		//Thread.sleep(3000);
+		
 		jse.executeScript("window.scrollBy(0,200)", "");
 		driver.findElement(By.cssSelector("button[class='booking-step-button pickup-pricing-button js-cart js-submit']")).click();
-		//Thread.sleep(3000);
+		
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("input[name='address_pretty']")));
 		driver.findElement(By.cssSelector("input[name='address_pretty']")).sendKeys("123 william street");
 		driver.findElement(By.cssSelector("input[name='address_pretty']")).sendKeys(Keys.DOWN);
@@ -118,7 +117,7 @@ public class Alerts_Frames
 		driver.findElement(By.xpath("(.//*[@class='ui-state-default'])[31]")).click();
 		driver.findElement(By.xpath("(.//*[@class='day-card-timeslot'])[8]")).click();
 		driver.findElement(By.cssSelector("button[class='button booking-apt-button']")).click();
-		//Thread.sleep(2000);
+		
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(.//*[@class='makespace-ui-library-1tcgbah css-nj7v3y2'])[1]")));
 		driver.findElement(By.xpath("(.//*[@class='makespace-ui-library-1tcgbah css-nj7v3y2'])[1]")).sendKeys("Tester one");
 		long phonenum = (long)(Math.random() * ((9999999999L - 1000000000) + 1)) + 1000000000;
@@ -126,7 +125,7 @@ public class Alerts_Frames
 		driver.findElement(By.xpath("(.//*[@class='makespace-ui-library-1tcgbah css-nj7v3y2'])[2]")).sendKeys(sPhonenum);
 		driver.findElement(By.cssSelector("span[class='makespace-ui-library-io1oly css-fn76al0']")).click();
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("button[class='makespace-ui-library-1akkiyt css-1bp8ty00']")));
-		//Thread.sleep(2000);
+		
 		driver.findElement(By.cssSelector("button[class='makespace-ui-library-1akkiyt css-1bp8ty00']")).click();
 		
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("js-cc-number")));
@@ -137,19 +136,17 @@ public class Alerts_Frames
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("div[class='ms-radio-circle flex']")));
 		driver.findElement(By.cssSelector("div[class='ms-radio-circle flex']")).click();
 		Thread.sleep(2000);
-		//wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("input[class='button booking-step-button booking-billing-button js-submit-button']")));
 		driver.findElement(By.cssSelector("input[class='button booking-step-button booking-billing-button js-submit-button']")).click();
-		//Thread.sleep(2000);
+		
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.name("phone")));
 		driver.findElement(By.name("phone")).sendKeys(sPhonenum);
 		driver.findElement(By.name("email")).sendKeys(sPhonenum);
 		driver.findElement(By.name("email")).sendKeys("@gmail.com");
 		driver.findElement(By.xpath("(.//*[@class='ms-radio-circle flex'])[2]")).click();
 		driver.findElement(By.xpath("(.//*[@class='ms-radio-circle flex'])[3]")).click();
-		//Thread.sleep(2000);
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("input[class='button ms-button booking-review-button js-submit-button']")));
 		driver.findElement(By.cssSelector("input[class='button ms-button booking-review-button js-submit-button']")).click();
-		//Thread.sleep(3000);
+		
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("button[class='button booking-inventory-button radius js-submit']")));
 		Assert.assertEquals(driver.findElement(By.cssSelector("h4[class='light-header--blue']")).getText(), "Your appointment for February 1, from 12pm-3pm is confirmed!");
 		driver.findElement(By.cssSelector("button[class='button booking-inventory-button radius js-submit']")).click();
