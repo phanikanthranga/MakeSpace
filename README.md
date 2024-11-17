@@ -1,3 +1,3 @@
 # MakeSpace
 
-Book a storage space on www.makespace.com
+Book a physical storage space on www.makespace.com
