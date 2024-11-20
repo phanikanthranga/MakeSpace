@@ -9,7 +9,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
 
-public class Alerts_Frames 
+public class MakeSpace 
 {
 	public static void main(String[] args) throws InterruptedException
 	{
