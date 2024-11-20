@@ -1,5 +1,5 @@
-public class ArraySort {
-
+public class ArraySort 
+{
     public static void main(String[] args) 
     {
         int[] a = {6, 1, 5, 4, 7, 3, 10, 2};
