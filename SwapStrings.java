@@ -3,7 +3,7 @@ public class SwapStrings
     public static void main(String args[]) 
     {  
         String a = "First";  
-        String b = "Second";  
+        String b = "Second String";  
         System.out.println("Before Swap: " + a + " " + b);  
         a = a + b;  
         b = a.substring(0, a.length() - b.length());  
