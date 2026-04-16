@@ -1,6 +1,6 @@
 # MakeSpace.java
 
-The code to book a physical storage space on www.makespace.com is in MakeSpace.java
+The code to book a physical storage space on www.clutter.com is in MakeSpace.java
 
 
 # Other Java Programs
