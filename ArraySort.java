@@ -6,7 +6,7 @@ public class ArraySort
 
         mySort(a); 
 
-        System.out.println("Sorted Array is ");
+        System.out.println("The Sorted Array is ");
         displayArray(a);
     }
 
