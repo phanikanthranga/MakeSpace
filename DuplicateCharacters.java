@@ -2,7 +2,7 @@ public class DuplicateCharacters
 {
    public static void main(String args[]) 
    {
-      String str = "sunny day san francisco";
+      String str = "sunny day in san francisco";
       char[] ca = str.toCharArray();
       System.out.println("The given string is " + str);
       System.out.print("The repeated characters in above string are ");
