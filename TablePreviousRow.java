@@ -4,7 +4,7 @@ public class TablePreviousRow
     {
     WebElement table = driver.findElement(By.xpath(“//table[@id=’myTable’]”));
 
-        // find all rows of the table
+        // find all the rows of the table
         List<WebElement> rows = table.findElements(By.xpath(“.//tr”));
 
         // Initialize row and column index
