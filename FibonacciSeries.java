@@ -10,7 +10,8 @@ public class FibonacciSeries {
 
         System.out.print("Fibonacci series numbers are \n"+ n1 + " " + n2);
 
-        for (int i = 2; i < count; i++) {
+        for (int i = 2; i < count; i++)  //the loop starts at 3 because the first 2 numbers are already printed
+        {
             int n3 = n1 + n2;
             System.out.print(" " + n3);
 
